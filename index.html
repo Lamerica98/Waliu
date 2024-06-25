@@ -1,63 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Your Name] - Digital Marketer</title>
-  <link rel="stylesheet" href="style.css"> </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        #showcase {
+            min-height: 400px;
+            background: #77aaff;
+            color: #fff;
+            text-align: center;
+            padding-top: 100px;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            margin-top: 0;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #main {
+            padding: 20px;
+            background: #fff;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #77aaff;
+            padding-bottom: 10px;
+        }
+        footer {
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-  <header class="header">
-    <h1>[Your Name]</h1>
-    <h2>Digital Marketer</h2>
-    <nav class="nav">
-      <a href="#about">About Me</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>My Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main>
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>A passionate and results-oriented digital marketer with [Number] years of experience. Skilled in [list 3-5 key skills]. Eager to leverage expertise to help businesses achieve their marketing goals.</p>
-      <a href="[Your LinkedIn URL]" class="btn">View My LinkedIn Profile</a> 
-    </section>
-
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Search Engine Optimization (SEO)</li>
-        <li>Social Media Marketing (SMM)</li>
-        <li>Content Marketing</li>
-        <li>Pay-Per-Click (PPC) Advertising</li>
-        <li>Email Marketing</li>
-        </ul>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-      <h2>Portfolio</h2>
-      <div class="project-container">
-        <article class="project">
-          <h3>Project Title</h3>
-          <img src="images/project1.jpg" alt="Project 1 screenshot">
-          <p>A brief description of the project and your role.</p>
-          <a href="[Project URL]" class="btn">View Project</a>
-        </article>
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a Python Developer with a passion for data analysis.</p>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-      <p>Feel free to reach out to me for any inquiries or project opportunities.</p>
-      <ul>
-        <li><a href="mailto:[Your Email]">Email: [Your Email]</a></li>
-        </ul>
-    </section>
-  </main>
+    <div id="main" class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Hello! I'm a Python developer specializing in data analysis. I have a strong background in programming, data visualization, and creating insightful data-driven solutions.</p>
+        </section>
 
-  <footer class="footer">
-    <p>&copy; [Current Year] [Your Name]</p>
-  </footer>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Data Analysis</li>
+                <li>Data Visualization</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Matplotlib</li>
+                <li>Machine Learning</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">Your GitHub Profile</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>My Portfolio &copy; 2024</p>
+    </footer>
 </body>
 </html>
