@@ -3,91 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Ola Waliu's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #77aaff;
+        }
+        #showcase {
+            background: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        #showcase h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        #showcase p {
+            font-size: 1.2em;
         }
         .container {
             width: 80%;
             margin: 0 auto;
-            overflow: hidden;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+        section {
+            padding: 20px 0;
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        #showcase {
-            min-height: 400px;
-            background: #77aaff;
-            color: #fff;
-            text-align: center;
-            padding-top: 100px;
-        }
-        #showcase h1 {
-            font-size: 55px;
-            margin-top: 0;
-        }
-        #showcase p {
-            font-size: 20px;
-        }
-        #main {
-            padding: 20px;
-            background: #fff;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
+        section h2 {
             border-bottom: 2px solid #77aaff;
             padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        #about p {
+            line-height: 1.6;
+        }
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        #skills ul li {
+            background: #77aaff;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        #contact a {
+            color: #77aaff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        #contact a:hover {
+            color: #2c3e50;
         }
         footer {
-            padding: 20px;
-            background: #333;
+            background: #2c3e50;
             color: #fff;
             text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>My Portfolio</h1>
-            </div>
+            <h1>Ola Waliu's Portfolio</h1>
             <nav>
                 <ul>
+                    <li><a href="#showcase">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -99,17 +122,17 @@
     <section id="showcase">
         <div class="container">
             <h1>Welcome to My Portfolio</h1>
-            <p>I'm a Python Developer with a passion for data analysis.</p>
+            <p>I'm Ola Waliu, a Python Developer with a passion for data analysis.</p>
         </div>
     </section>
 
-    <div id="main" class="container">
-        <section id="about" class="section">
+    <div class="container">
+        <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I'm a Python developer specializing in data analysis. I have a strong background in programming, data visualization, and creating insightful data-driven solutions.</p>
+            <p>Hello! I'm Ola Waliu, a Python developer specializing in data analysis. I have a strong background in programming, data visualization, and creating insightful data-driven solutions. My goal is to leverage data to solve real-world problems and provide actionable insights for better decision-making.</p>
         </section>
 
-        <section id="skills" class="section">
+        <section id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>Python</li>
@@ -119,19 +142,21 @@
                 <li>NumPy</li>
                 <li>Matplotlib</li>
                 <li>Machine Learning</li>
+                <li>SQL</li>
+                <li>Web Development</li>
             </ul>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact">
             <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Your LinkedIn Profile</a></p>
             <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">Your GitHub Profile</a></p>
         </section>
     </div>
 
     <footer>
-        <p>My Portfolio &copy; 2024</p>
+        <p>Ola Waliu's Portfolio &copy; 2024</p>
     </footer>
 </body>
 </html>
